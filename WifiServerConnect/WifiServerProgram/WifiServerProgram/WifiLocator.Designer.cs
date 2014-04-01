@@ -44,11 +44,12 @@
             this.accessPointMacAddress = new System.Windows.Forms.TextBox();
             this.connectedDevicesText = new System.Windows.Forms.Label();
             this.clientList = new System.Windows.Forms.ListBox();
-            this.listenButton = new System.Windows.Forms.Button();
+            this.startListeningButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.commandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopListeningButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -197,14 +198,14 @@
             this.clientList.Size = new System.Drawing.Size(120, 95);
             this.clientList.TabIndex = 16;
             // 
-            // listenButton
+            // startListeningButton
             // 
-            this.listenButton.Location = new System.Drawing.Point(454, 171);
-            this.listenButton.Name = "listenButton";
-            this.listenButton.Size = new System.Drawing.Size(120, 55);
-            this.listenButton.TabIndex = 17;
-            this.listenButton.Text = "Start Listening...";
-            this.listenButton.UseVisualStyleBackColor = true;
+            this.startListeningButton.Location = new System.Drawing.Point(454, 135);
+            this.startListeningButton.Name = "startListeningButton";
+            this.startListeningButton.Size = new System.Drawing.Size(120, 55);
+            this.startListeningButton.TabIndex = 17;
+            this.startListeningButton.Text = "Start Listening...";
+            this.startListeningButton.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -238,12 +239,22 @@
             this.quitButton.Text = "Quit";
             this.quitButton.Click += new System.EventHandler(this.quitButton_click);
             // 
+            // stopListeningButton
+            // 
+            this.stopListeningButton.Location = new System.Drawing.Point(454, 187);
+            this.stopListeningButton.Name = "stopListeningButton";
+            this.stopListeningButton.Size = new System.Drawing.Size(120, 39);
+            this.stopListeningButton.TabIndex = 19;
+            this.stopListeningButton.Text = "Stop Listening";
+            this.stopListeningButton.UseVisualStyleBackColor = true;
+            // 
             // WifiLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 450);
-            this.Controls.Add(this.listenButton);
+            this.Controls.Add(this.stopListeningButton);
+            this.Controls.Add(this.startListeningButton);
             this.Controls.Add(this.clientList);
             this.Controls.Add(this.connectedDevicesText);
             this.Controls.Add(this.accessPointMacAddress);
@@ -294,11 +305,12 @@
         private System.Windows.Forms.TextBox accessPointMacAddress;
         private System.Windows.Forms.Label connectedDevicesText;
         private System.Windows.Forms.ListBox clientList;
-        private System.Windows.Forms.Button listenButton;
+        private System.Windows.Forms.Button startListeningButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem commandsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitButton;
+        private System.Windows.Forms.Button stopListeningButton;
 
     }
 }
