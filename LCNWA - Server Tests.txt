@@ -1,0 +1,33 @@
+//Test #1
+
+Application.EnableVisualStyles();
+
+Application.SetCompatibleTextRenderingDefault(false);
+
+//Test #2
+            
+InitializeComponent();
+
+//Test #3
+public System.Windows.Forms.Button sendToServerButton;
+
+//Test #4
+WifiLocator wiTest = new WifiLocator();
+wiTest.userIdText.Text = "testing...";
+wiTest.firstNameText.Text = "testing...";
+wiTest.emailText.Text = "testing...";
+wiTest.macAddressText.Text = "testing...";
+wiTest.lastNameText.Text = "testing...";
+wiTest.passwordText.Text = "testing...";
+
+//Test #5
+
+public System.Windows.Forms.TextBox userIdText;
+public System.Windows.Forms.TextBox firstNameText;
+public System.Windows.Forms.TextBox emailText;
+public System.Windows.Forms.TextBox macAddressText;
+public System.Windows.Forms.TextBox lastNameText;
+public System.Windows.Forms.TextBox passwordText;
+
+//Test #6
+sendReport.Text = "Command Sent: " + command;

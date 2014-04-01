@@ -133,14 +133,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox userIdText;
-        private System.Windows.Forms.TextBox firstNameText;
-        private System.Windows.Forms.TextBox emailText;
-        private System.Windows.Forms.TextBox macAddressText;
-        private System.Windows.Forms.TextBox lastNameText;
-        private System.Windows.Forms.TextBox passwordText;
-        private System.Windows.Forms.Button sendToServerButton;
-        private System.Windows.Forms.Label sendReport;
+        //Test #5
+        public System.Windows.Forms.TextBox userIdText;
+        public System.Windows.Forms.TextBox firstNameText;
+        public System.Windows.Forms.TextBox emailText;
+        public System.Windows.Forms.TextBox macAddressText;
+        public System.Windows.Forms.TextBox lastNameText;
+        public System.Windows.Forms.TextBox passwordText;
+        //Test #3
+        public System.Windows.Forms.Button sendToServerButton;
+
+        public System.Windows.Forms.Label sendReport;
 
     }
 }

@@ -36,9 +36,8 @@ namespace WifiServerProgram
             {
                 try
                 {
-                    String command = "INSERT INTO wifitable (UserID,password,usermacaddress,firstname,lastname,email,isadmin) VALUES('" +
-                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','NO')";
-                    sendReport.Text = "Command Sent: " + command;
+                    String command = "INSERT INTO UserTable (userID,password,userMacAddress,firstName,lastName,email,isAdmin,deleteID) VALUES('" +
+                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','NO','1')";
 
                     MySqlConnection connection;
                     string server;
@@ -47,15 +46,15 @@ namespace WifiServerProgram
                     string password;
 
                     server = "mintaka.lynchburg.edu";
-                    database = "WifiLoc Dja";
-                    uid = "";
-                    password = "";
+                    database = "WifiLocDja";
+                    uid = "darrius_c";
+                    password = "fool7BREW";
                     string connectionString;
                     connectionString = "SERVER=" + server + ";" + "DATABASE=" +
                     database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
                     connection = new MySqlConnection(connectionString);
-
+                    connection.Open();
                     //open connection
                     //create command and assign the query and connection from the constructor
                     MySqlCommand cmd = new MySqlCommand(command, connection);
@@ -63,8 +62,10 @@ namespace WifiServerProgram
                     //Execute command
                     cmd.ExecuteNonQuery();
 
-             
-                    
+                    //Test #6
+                    sendReport.Text = "Command Sent: " + command;
+                    connection.Close();
+
                 }
                 catch (Exception badError)
                 {

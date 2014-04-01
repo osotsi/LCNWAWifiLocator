@@ -1,0 +1,5 @@
+Currently there is no useful information in the database, however the columns in the UserTable table are:
+
+userID,password,userMacAddress,firstName,lastName,email,isAdmin,deleteID
+
+We are currently using MySql
