@@ -36,8 +36,8 @@ namespace WifiServerProgram
             {
                 try
                 {
-                    String command = "INSERT INTO UserTable (userID,password,userMacAddress,firstName,lastName,email,isAdmin,deleteID) VALUES('" +
-                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','N','test')";
+                    String command = "INSERT INTO UserTable (userID,password,userMacAddress,firstName,lastName,email,isAdmin) VALUES('" +
+                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','N')";
 
                     MySqlConnection connection;
                     string server;
@@ -61,7 +61,7 @@ namespace WifiServerProgram
                     if (connection.State.Equals(ConnectionState.Open))
                     {
                         sendReport.Text = "Connection open, executing command...";
-
+                        slave.Text = command;
                         //create command and assign the query and connection from the constructor
                         MySqlCommand cmd = new MySqlCommand(command, connection);
                         //Execute command
