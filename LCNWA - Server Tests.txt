@@ -31,3 +31,20 @@ public System.Windows.Forms.TextBox passwordText;
 
 //Test #6
 sendReport.Text = "Command Sent: " + command;
+
+--------------
+//Test #7
+
+private System.Windows.Forms.TextBox accessPointName;
+private System.Windows.Forms.TextBox signalStrength;
+private System.Windows.Forms.TextBox ssid;
+private System.Windows.Forms.Button sendLocationInformation;
+private System.Windows.Forms.Label locationInfoLabel;
+private System.Windows.Forms.TextBox accessPointMacAddress;
+
+//Test #8
+wiTest.accessPointName = "testing...";
+wiTest.signalStrength = "testing...";
+wiTest.ssid = "testing...";
+wiTest.locationInfoLabel = "testing...";
+wiTest.accessPointMacAddress = "testing...";

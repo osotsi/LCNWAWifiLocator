@@ -14,3 +14,11 @@ C:\Users\osotsi_ak\Desktop\LCNWA Full Project\WifiServerConnect\WifiServerProgra
 C:\Users\osotsi_ak\Desktop\LCNWA Full Project\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.csproj.GenerateResource.Cache
 C:\Users\osotsi_ak\Desktop\LCNWA Full Project\WifiServerConnect\WifiServerProgram\WifiServerProgram\bin\Debug\WifiServerProgram.exe
 C:\Users\osotsi_ak\Desktop\LCNWA Full Project\WifiServerConnect\WifiServerProgram\WifiServerProgram\bin\Debug\WifiServerProgram.pdb
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.exe
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.pdb
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\bin\Debug\WifiServerProgram.exe
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\bin\Debug\WifiServerProgram.pdb
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.csprojResolveAssemblyReference.cache
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.Properties.Resources.resources
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.WifiLocator.resources
+C:\Users\osotsi_ak\Documents\GitHub\LCNWAWifiLocator\WifiServerConnect\WifiServerProgram\WifiServerProgram\obj\x86\Debug\WifiServerProgram.csproj.GenerateResource.Cache

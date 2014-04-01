@@ -36,6 +36,12 @@
             this.passwordText = new System.Windows.Forms.TextBox();
             this.sendToServerButton = new System.Windows.Forms.Button();
             this.sendReport = new System.Windows.Forms.Label();
+            this.accessPointName = new System.Windows.Forms.TextBox();
+            this.signalStrength = new System.Windows.Forms.TextBox();
+            this.ssid = new System.Windows.Forms.TextBox();
+            this.sendLocationInformation = new System.Windows.Forms.Button();
+            this.locationInfoLabel = new System.Windows.Forms.Label();
+            this.accessPointMacAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // userIdText
@@ -98,7 +104,7 @@
             this.sendToServerButton.Name = "sendToServerButton";
             this.sendToServerButton.Size = new System.Drawing.Size(164, 58);
             this.sendToServerButton.TabIndex = 7;
-            this.sendToServerButton.Text = "Send Information";
+            this.sendToServerButton.Text = "Send User Information";
             this.sendToServerButton.UseVisualStyleBackColor = true;
             this.sendToServerButton.Click += new System.EventHandler(this.sendToServerButton_Click);
             // 
@@ -107,15 +113,76 @@
             this.sendReport.AutoSize = true;
             this.sendReport.Location = new System.Drawing.Point(29, 254);
             this.sendReport.Name = "sendReport";
-            this.sendReport.Size = new System.Drawing.Size(244, 13);
+            this.sendReport.Size = new System.Drawing.Size(269, 13);
             this.sendReport.TabIndex = 8;
-            this.sendReport.Text = "Click Send To Send Information To The Database";
+            this.sendReport.Text = "Click Send To Send User Information To The Database";
+            // 
+            // accessPointName
+            // 
+            this.accessPointName.Location = new System.Drawing.Point(32, 292);
+            this.accessPointName.Name = "accessPointName";
+            this.accessPointName.Size = new System.Drawing.Size(185, 20);
+            this.accessPointName.TabIndex = 9;
+            this.accessPointName.Text = "Enter Access Point Name...";
+            this.accessPointName.Click += new System.EventHandler(this.textBox1_Click);
+            // 
+            // signalStrength
+            // 
+            this.signalStrength.Location = new System.Drawing.Point(32, 318);
+            this.signalStrength.Name = "signalStrength";
+            this.signalStrength.Size = new System.Drawing.Size(185, 20);
+            this.signalStrength.TabIndex = 10;
+            this.signalStrength.Text = "Enter Signal Strength...";
+            this.signalStrength.Click += new System.EventHandler(this.textBox2_Click);
+            // 
+            // ssid
+            // 
+            this.ssid.Location = new System.Drawing.Point(32, 344);
+            this.ssid.Name = "ssid";
+            this.ssid.Size = new System.Drawing.Size(185, 20);
+            this.ssid.TabIndex = 11;
+            this.ssid.Text = "Enter SSID...";
+            this.ssid.Click += new System.EventHandler(this.textBox3_Click);
+            // 
+            // sendLocationInformation
+            // 
+            this.sendLocationInformation.Location = new System.Drawing.Point(424, 292);
+            this.sendLocationInformation.Name = "sendLocationInformation";
+            this.sendLocationInformation.Size = new System.Drawing.Size(164, 46);
+            this.sendLocationInformation.TabIndex = 12;
+            this.sendLocationInformation.Text = "Send Location Information";
+            this.sendLocationInformation.UseVisualStyleBackColor = true;
+            this.sendLocationInformation.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // locationInfoLabel
+            // 
+            this.locationInfoLabel.AutoSize = true;
+            this.locationInfoLabel.Location = new System.Drawing.Point(29, 428);
+            this.locationInfoLabel.Name = "locationInfoLabel";
+            this.locationInfoLabel.Size = new System.Drawing.Size(288, 13);
+            this.locationInfoLabel.TabIndex = 13;
+            this.locationInfoLabel.Text = "Click Send To Send Location Information To The Database";
+            // 
+            // accessPointMacAddress
+            // 
+            this.accessPointMacAddress.Location = new System.Drawing.Point(32, 371);
+            this.accessPointMacAddress.Name = "accessPointMacAddress";
+            this.accessPointMacAddress.Size = new System.Drawing.Size(185, 20);
+            this.accessPointMacAddress.TabIndex = 14;
+            this.accessPointMacAddress.Text = "Enter Access Point Mac Address...";
+            this.accessPointMacAddress.Click += new System.EventHandler(this.accessPointMacAddress_Click);
             // 
             // WifiLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.accessPointMacAddress);
+            this.Controls.Add(this.locationInfoLabel);
+            this.Controls.Add(this.sendLocationInformation);
+            this.Controls.Add(this.ssid);
+            this.Controls.Add(this.signalStrength);
+            this.Controls.Add(this.accessPointName);
             this.Controls.Add(this.sendReport);
             this.Controls.Add(this.sendToServerButton);
             this.Controls.Add(this.lastNameText);
@@ -144,6 +211,14 @@
         public System.Windows.Forms.Button sendToServerButton;
 
         public System.Windows.Forms.Label sendReport;
+
+        //Test #7
+        private System.Windows.Forms.TextBox accessPointName;
+        private System.Windows.Forms.TextBox signalStrength;
+        private System.Windows.Forms.TextBox ssid;
+        private System.Windows.Forms.Button sendLocationInformation;
+        private System.Windows.Forms.Label locationInfoLabel;
+        private System.Windows.Forms.TextBox accessPointMacAddress;
 
     }
 }
