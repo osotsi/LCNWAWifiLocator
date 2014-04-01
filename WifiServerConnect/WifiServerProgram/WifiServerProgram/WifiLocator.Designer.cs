@@ -42,6 +42,7 @@
             this.sendLocationInformation = new System.Windows.Forms.Button();
             this.locationInfoLabel = new System.Windows.Forms.Label();
             this.accessPointMacAddress = new System.Windows.Forms.TextBox();
+            this.slave = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // userIdText
@@ -172,11 +173,19 @@
             this.accessPointMacAddress.Text = "Enter Access Point Mac Address...";
             this.accessPointMacAddress.Click += new System.EventHandler(this.accessPointMacAddress_Click);
             // 
+            // slave
+            // 
+            this.slave.Location = new System.Drawing.Point(424, 171);
+            this.slave.Name = "slave";
+            this.slave.Size = new System.Drawing.Size(281, 20);
+            this.slave.TabIndex = 15;
+            // 
             // WifiLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.slave);
             this.Controls.Add(this.accessPointMacAddress);
             this.Controls.Add(this.locationInfoLabel);
             this.Controls.Add(this.sendLocationInformation);
@@ -192,7 +201,7 @@
             this.Controls.Add(this.firstNameText);
             this.Controls.Add(this.userIdText);
             this.Name = "WifiLocator";
-            this.Text = "Wifi Locator Control Panel";
+            this.Text = "Wifi Locator Server Panel";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +228,7 @@
         private System.Windows.Forms.Button sendLocationInformation;
         private System.Windows.Forms.Label locationInfoLabel;
         private System.Windows.Forms.TextBox accessPointMacAddress;
+        private System.Windows.Forms.TextBox slave;
 
     }
 }
