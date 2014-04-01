@@ -42,7 +42,14 @@
             this.sendLocationInformation = new System.Windows.Forms.Button();
             this.locationInfoLabel = new System.Windows.Forms.Label();
             this.accessPointMacAddress = new System.Windows.Forms.TextBox();
-            this.slave = new System.Windows.Forms.TextBox();
+            this.connectedDevicesText = new System.Windows.Forms.Label();
+            this.clientList = new System.Windows.Forms.ListBox();
+            this.listenButton = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.commandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // userIdText
@@ -101,7 +108,7 @@
             // 
             // sendToServerButton
             // 
-            this.sendToServerButton.Location = new System.Drawing.Point(424, 24);
+            this.sendToServerButton.Location = new System.Drawing.Point(269, 24);
             this.sendToServerButton.Name = "sendToServerButton";
             this.sendToServerButton.Size = new System.Drawing.Size(164, 58);
             this.sendToServerButton.TabIndex = 7;
@@ -147,7 +154,7 @@
             // 
             // sendLocationInformation
             // 
-            this.sendLocationInformation.Location = new System.Drawing.Point(424, 292);
+            this.sendLocationInformation.Location = new System.Drawing.Point(269, 292);
             this.sendLocationInformation.Name = "sendLocationInformation";
             this.sendLocationInformation.Size = new System.Drawing.Size(164, 46);
             this.sendLocationInformation.TabIndex = 12;
@@ -173,19 +180,72 @@
             this.accessPointMacAddress.Text = "Enter Access Point Mac Address...";
             this.accessPointMacAddress.Click += new System.EventHandler(this.accessPointMacAddress_Click);
             // 
-            // slave
+            // connectedDevicesText
             // 
-            this.slave.Location = new System.Drawing.Point(424, 171);
-            this.slave.Name = "slave";
-            this.slave.Size = new System.Drawing.Size(281, 20);
-            this.slave.TabIndex = 15;
+            this.connectedDevicesText.AutoSize = true;
+            this.connectedDevicesText.Location = new System.Drawing.Point(451, 24);
+            this.connectedDevicesText.Name = "connectedDevicesText";
+            this.connectedDevicesText.Size = new System.Drawing.Size(104, 13);
+            this.connectedDevicesText.TabIndex = 15;
+            this.connectedDevicesText.Text = "Connected Devices:";
+            // 
+            // clientList
+            // 
+            this.clientList.FormattingEnabled = true;
+            this.clientList.Location = new System.Drawing.Point(454, 41);
+            this.clientList.Name = "clientList";
+            this.clientList.Size = new System.Drawing.Size(120, 95);
+            this.clientList.TabIndex = 16;
+            // 
+            // listenButton
+            // 
+            this.listenButton.Location = new System.Drawing.Point(454, 171);
+            this.listenButton.Name = "listenButton";
+            this.listenButton.Size = new System.Drawing.Size(120, 55);
+            this.listenButton.TabIndex = 17;
+            this.listenButton.Text = "Start Listening...";
+            this.listenButton.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.commandsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(982, 24);
+            this.menuStrip1.TabIndex = 18;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quitButton});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // commandsToolStripMenuItem
+            // 
+            this.commandsToolStripMenuItem.Name = "commandsToolStripMenuItem";
+            this.commandsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.commandsToolStripMenuItem.Text = "Commands";
+            // 
+            // quitButton
+            // 
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(152, 22);
+            this.quitButton.Text = "Quit";
+            this.quitButton.Click += new System.EventHandler(this.quitButton_click);
             // 
             // WifiLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.slave);
+            this.ClientSize = new System.Drawing.Size(982, 450);
+            this.Controls.Add(this.listenButton);
+            this.Controls.Add(this.clientList);
+            this.Controls.Add(this.connectedDevicesText);
             this.Controls.Add(this.accessPointMacAddress);
             this.Controls.Add(this.locationInfoLabel);
             this.Controls.Add(this.sendLocationInformation);
@@ -200,8 +260,12 @@
             this.Controls.Add(this.macAddressText);
             this.Controls.Add(this.firstNameText);
             this.Controls.Add(this.userIdText);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "WifiLocator";
             this.Text = "Wifi Locator Server Panel";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,7 +292,13 @@
         private System.Windows.Forms.Button sendLocationInformation;
         private System.Windows.Forms.Label locationInfoLabel;
         private System.Windows.Forms.TextBox accessPointMacAddress;
-        private System.Windows.Forms.TextBox slave;
+        private System.Windows.Forms.Label connectedDevicesText;
+        private System.Windows.Forms.ListBox clientList;
+        private System.Windows.Forms.Button listenButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem commandsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quitButton;
 
     }
 }

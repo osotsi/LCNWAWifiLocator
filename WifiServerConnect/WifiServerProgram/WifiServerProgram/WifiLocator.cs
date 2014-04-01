@@ -61,7 +61,6 @@ namespace WifiServerProgram
                     if (connection.State.Equals(ConnectionState.Open))
                     {
                         sendReport.Text = "Connection open, executing command...";
-                        slave.Text = command;
                         //create command and assign the query and connection from the constructor
                         MySqlCommand cmd = new MySqlCommand(command, connection);
                         //Execute command
@@ -178,6 +177,10 @@ namespace WifiServerProgram
             accessPointName.Text = "";
         }
 
+        private void quitButton_click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void textBox2_Click(object sender, EventArgs e)
         {
             signalStrength.Text = "";
