@@ -37,7 +37,7 @@ namespace WifiServerProgram
                 try
                 {
                     String command = "INSERT INTO UserTable (userID,password,userMacAddress,firstName,lastName,email,isAdmin,deleteID) VALUES('" +
-                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','NO','1')";
+                    userIdText.Text + "','" + passwordText.Text + "','" + macAddressText.Text + "','" + firstNameText.Text + "','" + lastNameText.Text + "','" + emailText.Text + "','N','test')";
 
                     MySqlConnection connection;
                     string server;
@@ -53,18 +53,87 @@ namespace WifiServerProgram
                     connectionString = "SERVER=" + server + ";" + "DATABASE=" +
                     database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
+                    sendReport.Text = "Connecting...";
+                    connection = new MySqlConnection(connectionString);
+                    //open connection
+                    connection.Open();               
+                    
+                    if (connection.State.Equals(ConnectionState.Open))
+                    {
+                        sendReport.Text = "Connection open, executing command...";
+
+                        //create command and assign the query and connection from the constructor
+                        MySqlCommand cmd = new MySqlCommand(command, connection);
+                        //Execute command
+                        cmd.ExecuteNonQuery();
+
+                        //Test #6
+                        sendReport.Text = "Success! Executed query: " + command;
+                        connection.Close();
+                    }
+
+
+                }
+                catch (Exception badError)
+                {
+                    Console.WriteLine("Error..... " + badError.StackTrace);
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (accessPointName.Text == "" || signalStrength.Text == "" || ssid.Text == "" || accessPointMacAddress.Text == "")
+            {
+                locationInfoLabel.Text = "Fill in all the required information!";
+            }
+            else if (accessPointName.Text.Contains("Enter ") || signalStrength.Text.Contains("Enter ") || ssid.Text.Contains("Enter ") || accessPointMacAddress.Text.Contains("Enter "))
+            {
+                locationInfoLabel.Text = "Actually enter in some information...";
+            }
+            else if (userIdText.Text == "" || userIdText.Text.Contains("Enter "))
+            {
+                locationInfoLabel.Text = "User ID not entered (change above)";
+            }
+            else
+            {
+                try
+                {
+                    String command = "INSERT INTO locations (accessPointName,signalStrength,macAddress,ssid,userID) VALUES('" +
+                    accessPointName.Text + "','" + signalStrength.Text + "','" + accessPointMacAddress.Text + "','" + ssid.Text + "','" + userIdText.Text + "')";
+
+                    MySqlConnection connection;
+                    string server;
+                    string database;
+                    string uid;
+                    string password;
+
+                    server = "mintaka.lynchburg.edu";
+                    database = "WifiLocDja";
+                    uid = "darrius_c";
+                    password = "fool7BREW";
+                    string connectionString;
+                    connectionString = "SERVER=" + server + ";" + "DATABASE=" +
+                    database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+
+                    locationInfoLabel.Text = "Connecting...";
                     connection = new MySqlConnection(connectionString);
                     connection.Open();
-                    //open connection
-                    //create command and assign the query and connection from the constructor
-                    MySqlCommand cmd = new MySqlCommand(command, connection);
+                    if (connection.State.Equals(ConnectionState.Open))
+                    {
+                        locationInfoLabel.Text = "Connection open, executing command...";
+                        //open connection
+                        //create command and assign the query and connection from the constructor
+                        MySqlCommand cmd = new MySqlCommand(command, connection);
 
-                    //Execute command
-                    cmd.ExecuteNonQuery();
+                        //Execute command
+                        cmd.ExecuteNonQuery();
 
-                    //Test #6
-                    sendReport.Text = "Command Sent: " + command;
-                    connection.Close();
+                        //Test #8
+                        locationInfoLabel.Text = "Success! Executed query: " + command;
+                        connection.Close();
+                    }
+
 
                 }
                 catch (Exception badError)
@@ -118,63 +187,7 @@ namespace WifiServerProgram
         {
             ssid.Text = "";
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (accessPointName.Text == "" || signalStrength.Text == "" || ssid.Text == "" || accessPointMacAddress.Text == "")
-            {
-                locationInfoLabel.Text = "Fill in all the required information!";
-            }
-            else if (accessPointName.Text.Contains("Enter ") || signalStrength.Text.Contains("Enter ") || ssid.Text.Contains("Enter ") || accessPointMacAddress.Text.Contains("Enter "))
-            {
-                locationInfoLabel.Text = "Actually enter in some information...";
-            }
-            else if (userIdText.Text == "" || userIdText.Text.Contains("Enter "))
-            {
-                locationInfoLabel.Text = "User ID not entered (change above)";
-            }
-            else
-            {
-                try
-                {
-                    String command = "INSERT INTO locations (accessPointName,signalStrength,macAddress,ssid,userName) VALUES('" +
-                    accessPointName.Text + "','" + signalStrength.Text + "','" + accessPointMacAddress.Text + "','" + ssid.Text + "','" + userIdText.Text +"')";
-
-                    MySqlConnection connection;
-                    string server;
-                    string database;
-                    string uid;
-                    string password;
-
-                    server = "mintaka.lynchburg.edu";
-                    database = "WifiLocDja";
-                    uid = "darrius_c";
-                    password = "fool7BREW";
-                    string connectionString;
-                    connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-                    database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
-                    connection = new MySqlConnection(connectionString);
-                    connection.Open();
-                    //open connection
-                    //create command and assign the query and connection from the constructor
-                    MySqlCommand cmd = new MySqlCommand(command, connection);
-
-                    //Execute command
-                    cmd.ExecuteNonQuery();
-
-                    //Test #8
-                    locationInfoLabel.Text = "Command Sent: " + command;
-                    connection.Close();
-
-                }
-                catch (Exception badError)
-                {
-                    Console.WriteLine("Error..... " + badError.StackTrace);
-                }
-            }
-        }
-
+           
         private void accessPointMacAddress_Click(object sender, EventArgs e)
         {
             accessPointMacAddress.Text = "";
