@@ -1,0 +1,40 @@
+March 8, 2014
+Create an Android Application with default layout.
+March 9, 2014
+Login page Include Username & password type in
+Login Button which could check in database and return result
+Register Button jump to Register page	
+March 13, 2014
+Create a Register page (with minimal request):
+	UserName, password
+Confirm register button ( check password and username)
+Return result
+March 14, 2014
+Study how to make a sqlLite (built-in database, use to test app)
+Create a sqlLite database
+March 16, 2014
+Connect sqlLite to register page
+Test pass
+March 19, 2014
+Remake Register Page
+Add a result dialog pop out
+Result:
+1.	Username exist
+2.	Password not correct
+3.	ok
+March 20, 2014
+Working on successful Login page,
+And connect Login button to this
+Test pass, also pass get user information from sqlLite
+March 22
+Make change for successful page
+March 30
+Working on permission things
+   <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE">
+Next step: to create wifi and network state test in login page and return a result
+Aprial 1
+
+programming about android
