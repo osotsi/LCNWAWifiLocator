@@ -1,0 +1,32 @@
+Robert Arnold
+WiFi-Locator	
+Journal
+
+earlier in the year of 2014 - 3/1:
+
+1. Obtained a mintaka account for the database
+	- formulated a relational database model
+	- created a skeleton of the database
+
+3/2 - 3/8:
+
+2. Researched the compatability between SQL, C#, and Android Applications
+3. Researched how to connect Android with MySql with PHP
+	-http://www.androidhive.info/2012/01/android-login-and-registration-with-php-mysql-and-sqlite/
+	-http://developer.android.com/training/basics/data-storage/databases.html
+
+3/9 - 3/15:
+5. Downloaded Eclipse 
+	- Explored Android code and more tutorials
+	- created simple "hello world" app
+
+3/16 - 3/22:
+6. Researched how to open the connection from Visual Studio to the SQL database
+	- Darius had good code, just couldn't get it to store in SQL 
+
+3/23 - 3/29:
+7. PPed with Anta to indentify and implement tests for server code
+8. PPed with anta and darius to open the connection from Visual Studio to SQL
+
+3/30 - 4/5:
+9. Researched how to find the a user's mac address
