@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 //QLlite datebase
-class Sql extends SQLiteOpenHelper{
+public class Sql extends SQLiteOpenHelper{
 	
 	//creat a new user
 	String createUserTable = "create table user_info(_id int auto_increment,username char(20),"
