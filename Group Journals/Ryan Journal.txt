@@ -41,3 +41,6 @@ programming about android
 April 8 
 Create JUnit test for application
 Something wrong about package 
+April 9
+Try to work on checking network status when app opened. Doesn;t work.
+
