@@ -3,6 +3,7 @@
     package="login.com"
     android:versionCode="1"
     android:versionName="1.0" >
+    
 <instrumentation android:name="android.test.InstrumentationTestRunner"
     android:targetPackage="login.com"
     android:label="test" />
@@ -26,6 +27,12 @@
             
                   <activity android:name = "SuccessLogin" android:label="Main"
                 ></activity>
+                  
+        <receiver android:name=".NetworkReceiver">
+		<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+	</receiver>
     </application>
 
 </manifest>

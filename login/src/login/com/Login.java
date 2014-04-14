@@ -1,15 +1,21 @@
 package login.com;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+/* click acticity */
+import android.view.View.OnClickListener;
 import android.test.*;
+/* this part for network status */
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+/* this part for database */
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
 /**
  * Login
  * 

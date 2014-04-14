@@ -24,7 +24,6 @@ public class SuccessLogin extends Activity implements OnClickListener{
    //     back2.setOnClickListener((OnClickListener) this);
         	
         	exit.setOnClickListener(this);
-        	
 	}
 	
     /**

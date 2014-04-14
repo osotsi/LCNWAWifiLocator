@@ -41,3 +41,10 @@ programming about android
 April 8 
 Create JUnit test for application
 Something wrong about package 
+April 13
+make network status for app, when run up. it will check by itself.
+new import:	
+	import android.database.Cursor;
+	import android.database.sqlite.SQLiteDatabase;
+April 14
+try to make check works.
