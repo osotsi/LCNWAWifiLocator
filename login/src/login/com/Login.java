@@ -19,16 +19,14 @@ import android.database.sqlite.SQLiteDatabase;
 
 /**
  * Login
- * 
  * @author F
- * 
  */
 
 public class Login extends Activity implements OnClickListener{
 	
 	EditText use,password;
 	Button login,register;
-	
+	// virtual build-in database
 	Sql db;
 	SQLiteDatabase sDatabase = null;
     /** Called when the activity is first created. */
