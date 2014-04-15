@@ -41,16 +41,21 @@ programming about android
 April 8 
 Create JUnit test for application
 Something wrong about package 
-<<<<<<< HEAD
+
+April 9
+Try to work on checking network status when app opened. Doesn't work.
+
 April 13
 make network status for app, when run up. it will check by itself.
 new import:	
 	import android.database.Cursor;
 	import android.database.sqlite.SQLiteDatabase;
+
 April 14
 try to make check works.
-=======
-April 9
-Try to work on checking network status when app opened. Doesn;t work.
+use boolean to check and reutn true of false
+is woking on virtual(only false, beacuse virutal cant check it)
 
->>>>>>> fcc5f03f9f415bd198779a38978c558b04ed7e85
+
+
+

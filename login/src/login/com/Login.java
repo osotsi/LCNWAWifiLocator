@@ -1,5 +1,6 @@
 package login.com;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,7 +24,7 @@ import android.database.sqlite.SQLiteDatabase;
  * 
  */
 
-;public class Login extends Activity implements OnClickListener{
+public class Login extends Activity implements OnClickListener{
 	
 	EditText use,password;
 	Button login,register;
@@ -47,11 +48,50 @@ import android.database.sqlite.SQLiteDatabase;
         db = new Sql(getApplicationContext(), "store.db", null, 1);
 		sDatabase = db.getWritableDatabase();
 		
+		if (this.isWifiConnected() == false)
+		{	
+			DialogDemo.builder(Login.this, "Error", "Please connect to wifi");
+		}
     }
-
+  /*
+   * all net checking (include wifi 3g etc..)  
+    private boolean isNetConnected(){
+    	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    	if (cm != null){
+    		NetworkInfo[] infos = cm.getAllNetworkInfo();
+    		if (infos !=null){
+    			for (NetworkInfo netInfo:infos){
+    				if (netInfo.isConnected()){
+    					return true;
+    				}
+    			}
+    		}
+    	}
+    	return false;
+    }
+    */
+    
+    /*
+     * check wifi status
+     */
+    private boolean isWifiConnected(){
+    	/*
+    	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    	if (cm != null){
+    		NetworkInfo wifiInfo = cm.getActiveNetworkInfo();
+    			if (wifiInfo!=null && wifiInfo.getType() == ConnectivityManager.TYPE_WIFI ){
+    
+    					return true;
+    			}
+    	
+    	}
+    	*/
+    	return false;
+    }
+    
 	@Override
 	public void onClick(View v) {
-		
+		// check network status
 		//get userName
 		String i = use.getText().toString();
 		
