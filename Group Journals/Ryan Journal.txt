@@ -56,6 +56,8 @@ try to make check works.
 use boolean to check and reutn true of false
 is woking on virtual(only false, beacuse virutal cant check it)
 
-
+April 15
+Pair-programming to write test and refactor code
+test pass
 
 
