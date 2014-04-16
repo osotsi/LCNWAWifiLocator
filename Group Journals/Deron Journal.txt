@@ -1,0 +1,7 @@
+Date (mm/dd)    Entry
+------------    ------
+(03/28)?        Justin and I started building the wiki page
+(03/30)?        I updated the wiki page with links and to be more appealing
+(03/30)?        Justin, Ryan and I started working more on the graphical user interface
+(04/15)		Darrius and I PPed the wiki page to update with screenshots
+(04/15)		Ryan, Darrius, Justin and I PPed Tests for the Wifi Login screen.
