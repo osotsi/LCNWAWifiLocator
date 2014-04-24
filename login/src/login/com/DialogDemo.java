@@ -3,7 +3,10 @@ package login.com;
 
 import android.app.AlertDialog;
 import android.content.Context;
-
+/**
+ * Dialog used to make notice
+ * @author F
+ */
 public class DialogDemo
 {
 	// warning messsage box

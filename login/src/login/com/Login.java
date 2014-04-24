@@ -48,7 +48,7 @@ public class Login extends Activity implements OnClickListener{
 		
 		if (this.isWifiConnected() == false)
 		{	
-			DialogDemo.builder(Login.this, "Error", "Please connect to wifi");
+			DialogDemo.builder(Login.this, "Wifi", "Please connect to wifi");
 		}
     }
   /*

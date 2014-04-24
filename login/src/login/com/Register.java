@@ -13,9 +13,7 @@ import android.widget.Toast;
 
 /**
  * register
- * 
  * @author F
- * 
  */
 public class Register extends Activity implements OnClickListener{
 	

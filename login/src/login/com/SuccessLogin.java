@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
+/** 
+* successful login page
+* FU
+*/
 
 public class SuccessLogin extends Activity implements OnClickListener{
 	Button exit;
