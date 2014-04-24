@@ -47,69 +47,73 @@
             this.startListeningButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.commandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.commandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopListeningButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // userIdText
             // 
-            this.userIdText.Location = new System.Drawing.Point(32, 24);
+            this.userIdText.Location = new System.Drawing.Point(32, 41);
             this.userIdText.Name = "userIdText";
             this.userIdText.Size = new System.Drawing.Size(143, 20);
             this.userIdText.TabIndex = 1;
-            this.userIdText.Text = "Enter User Id...";
             this.userIdText.Click += new System.EventHandler(this.userIdText_Click);
             // 
             // firstNameText
             // 
-            this.firstNameText.Location = new System.Drawing.Point(32, 135);
+            this.firstNameText.Location = new System.Drawing.Point(32, 164);
             this.firstNameText.Name = "firstNameText";
             this.firstNameText.Size = new System.Drawing.Size(143, 20);
             this.firstNameText.TabIndex = 2;
-            this.firstNameText.Text = "Enter User First Name...";
             this.firstNameText.Click += new System.EventHandler(this.firstNameText_Click);
             // 
             // emailText
             // 
-            this.emailText.Location = new System.Drawing.Point(32, 206);
+            this.emailText.Location = new System.Drawing.Point(32, 253);
             this.emailText.Name = "emailText";
             this.emailText.Size = new System.Drawing.Size(143, 20);
             this.emailText.TabIndex = 4;
-            this.emailText.Text = "Enter User Email...";
             this.emailText.Click += new System.EventHandler(this.emailText_Click);
             // 
             // macAddressText
             // 
-            this.macAddressText.Location = new System.Drawing.Point(32, 97);
+            this.macAddressText.Location = new System.Drawing.Point(32, 125);
             this.macAddressText.Name = "macAddressText";
             this.macAddressText.Size = new System.Drawing.Size(143, 20);
             this.macAddressText.TabIndex = 3;
-            this.macAddressText.Text = "Enter User Mac Address...";
             this.macAddressText.Click += new System.EventHandler(this.macAddressText_Click);
             // 
             // lastNameText
             // 
-            this.lastNameText.Location = new System.Drawing.Point(32, 171);
+            this.lastNameText.Location = new System.Drawing.Point(32, 206);
             this.lastNameText.Name = "lastNameText";
             this.lastNameText.Size = new System.Drawing.Size(143, 20);
             this.lastNameText.TabIndex = 6;
-            this.lastNameText.Text = "Enter User Last Name...";
             this.lastNameText.Click += new System.EventHandler(this.lastNameText_Click);
             // 
             // passwordText
             // 
-            this.passwordText.Location = new System.Drawing.Point(32, 62);
+            this.passwordText.Location = new System.Drawing.Point(32, 86);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(143, 20);
             this.passwordText.TabIndex = 5;
-            this.passwordText.Text = "Enter User Password...";
             this.passwordText.Click += new System.EventHandler(this.passwordText_Click);
             // 
             // sendToServerButton
             // 
-            this.sendToServerButton.Location = new System.Drawing.Point(269, 24);
+            this.sendToServerButton.Location = new System.Drawing.Point(269, 215);
             this.sendToServerButton.Name = "sendToServerButton";
             this.sendToServerButton.Size = new System.Drawing.Size(164, 58);
             this.sendToServerButton.TabIndex = 7;
@@ -120,7 +124,7 @@
             // sendReport
             // 
             this.sendReport.AutoSize = true;
-            this.sendReport.Location = new System.Drawing.Point(29, 254);
+            this.sendReport.Location = new System.Drawing.Point(29, 288);
             this.sendReport.Name = "sendReport";
             this.sendReport.Size = new System.Drawing.Size(269, 13);
             this.sendReport.TabIndex = 8;
@@ -128,34 +132,31 @@
             // 
             // accessPointName
             // 
-            this.accessPointName.Location = new System.Drawing.Point(32, 292);
+            this.accessPointName.Location = new System.Drawing.Point(32, 339);
             this.accessPointName.Name = "accessPointName";
             this.accessPointName.Size = new System.Drawing.Size(185, 20);
             this.accessPointName.TabIndex = 9;
-            this.accessPointName.Text = "Enter Access Point Name...";
             this.accessPointName.Click += new System.EventHandler(this.textBox1_Click);
             // 
             // signalStrength
             // 
-            this.signalStrength.Location = new System.Drawing.Point(32, 318);
+            this.signalStrength.Location = new System.Drawing.Point(32, 381);
             this.signalStrength.Name = "signalStrength";
             this.signalStrength.Size = new System.Drawing.Size(185, 20);
             this.signalStrength.TabIndex = 10;
-            this.signalStrength.Text = "Enter Signal Strength...";
             this.signalStrength.Click += new System.EventHandler(this.textBox2_Click);
             // 
             // ssid
             // 
-            this.ssid.Location = new System.Drawing.Point(32, 344);
+            this.ssid.Location = new System.Drawing.Point(32, 423);
             this.ssid.Name = "ssid";
             this.ssid.Size = new System.Drawing.Size(185, 20);
             this.ssid.TabIndex = 11;
-            this.ssid.Text = "Enter SSID...";
             this.ssid.Click += new System.EventHandler(this.textBox3_Click);
             // 
             // sendLocationInformation
             // 
-            this.sendLocationInformation.Location = new System.Drawing.Point(269, 292);
+            this.sendLocationInformation.Location = new System.Drawing.Point(269, 439);
             this.sendLocationInformation.Name = "sendLocationInformation";
             this.sendLocationInformation.Size = new System.Drawing.Size(164, 46);
             this.sendLocationInformation.TabIndex = 12;
@@ -166,7 +167,7 @@
             // locationInfoLabel
             // 
             this.locationInfoLabel.AutoSize = true;
-            this.locationInfoLabel.Location = new System.Drawing.Point(29, 428);
+            this.locationInfoLabel.Location = new System.Drawing.Point(29, 503);
             this.locationInfoLabel.Name = "locationInfoLabel";
             this.locationInfoLabel.Size = new System.Drawing.Size(288, 13);
             this.locationInfoLabel.TabIndex = 13;
@@ -174,11 +175,10 @@
             // 
             // accessPointMacAddress
             // 
-            this.accessPointMacAddress.Location = new System.Drawing.Point(32, 371);
+            this.accessPointMacAddress.Location = new System.Drawing.Point(32, 465);
             this.accessPointMacAddress.Name = "accessPointMacAddress";
             this.accessPointMacAddress.Size = new System.Drawing.Size(185, 20);
             this.accessPointMacAddress.TabIndex = 14;
-            this.accessPointMacAddress.Text = "Enter Access Point Mac Address...";
             this.accessPointMacAddress.Click += new System.EventHandler(this.accessPointMacAddress_Click);
             // 
             // connectedDevicesText
@@ -214,7 +214,7 @@
             this.commandsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(982, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(600, 24);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -226,18 +226,18 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // quitButton
+            // 
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(97, 22);
+            this.quitButton.Text = "Quit";
+            this.quitButton.Click += new System.EventHandler(this.quitButton_click);
+            // 
             // commandsToolStripMenuItem
             // 
             this.commandsToolStripMenuItem.Name = "commandsToolStripMenuItem";
             this.commandsToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.commandsToolStripMenuItem.Text = "Commands";
-            // 
-            // quitButton
-            // 
-            this.quitButton.Name = "quitButton";
-            this.quitButton.Size = new System.Drawing.Size(152, 22);
-            this.quitButton.Text = "Quit";
-            this.quitButton.Click += new System.EventHandler(this.quitButton_click);
             // 
             // stopListeningButton
             // 
@@ -248,11 +248,111 @@
             this.stopListeningButton.Text = "Stop Listening";
             this.stopListeningButton.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 237);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Enter User Email...";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(33, 187);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 13);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Enter User Last Name...";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Enter User First Name...";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Enter User Mac Address...";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(115, 13);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Enter User Password...";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(37, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Enter User Id...";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 446);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(171, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Enter Access Point Mac Address...";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(32, 404);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Enter SSID...";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(32, 362);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(116, 13);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Enter Signal Strength...";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(32, 320);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(137, 13);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "Enter Access Point Name...";
+            // 
             // WifiLocator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 450);
+            this.ClientSize = new System.Drawing.Size(600, 538);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.stopListeningButton);
             this.Controls.Add(this.startListeningButton);
             this.Controls.Add(this.clientList);
@@ -311,6 +411,16 @@
         private System.Windows.Forms.ToolStripMenuItem commandsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitButton;
         private System.Windows.Forms.Button stopListeningButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
 
     }
 }
