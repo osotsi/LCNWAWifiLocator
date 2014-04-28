@@ -43,7 +43,6 @@ public class SuccessLogin extends Activity implements OnClickListener{
 					 startActivity(intent);
 					 Toast.makeText(SuccessLogin.this, "Successful exit", Toast.LENGTH_SHORT).show();
 					 
-					 
 			 	}
 			}
 		}

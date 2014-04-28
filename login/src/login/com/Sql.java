@@ -29,6 +29,7 @@ public class Sql extends SQLiteOpenHelper{
 		//  create userTable
 		db.execSQL(createUserTable);
 		
+		
 		// insert data
 		String[] insertValue = { "0", "admin", "admin" };//0 as admin
 		db.execSQL(insertStr, insertValue);

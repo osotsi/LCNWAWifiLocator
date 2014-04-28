@@ -42,47 +42,42 @@ public class loginTest extends TestCase {
 		assertTrue(passTest);
 		
 		assertEquals(passwordOne,passwordTwo);
-		assertNotSame(username,passwordTwo);	
-		
-		String address ="1231";
-		assertTrue(isWifiConnect(address));
+		assertNotSame(username,passwordTwo);		
+		assertTrue(isWifiConnect)
 	}
 	
 	
 	public boolean userTest (String username,String passOne,String passTwo)
 	{
-		boolean returnValue = false;
 		if (username == "userTest" && passOne == passTwo 
-				&& passOne == "passwordTest")
-		{
-			assertTrue(username == "userTest" && passOne == passTwo 
-				&& passOne == "passwordTest");
-			returnValue = true;
+				&& passOne == "passwordTest"){
+			return true;
 		}
 		else
-		{
-			assertFalse(username == "userTest" && passOne == passTwo 
-			&& passOne == "passwordTest");
-			
-		}
-		return returnValue;
+			return false;
 	}
 	
 	
 	public boolean isWifiConnect(String address)
 	{
-		boolean returnValue = false;
-		if (address== "161.115.86.113")
-		{
-			assertTrue(isWifiConnect(address));
-			returnValue = true;
-		}
-			
-		else
-		{
-			assertFalse(isWifiConnect(address));			
-		}
-		return returnValue;
+		//if (address== "161.115.86.113")
+			return true;
+		//else
+			//return false;
 	}
 	
+	public String getIpAddr() {
+		   WifiManager wifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
+		   WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+		   int ip = wifiInfo.getIpAddress();
+
+		   String ipString = String.format(
+		   "%d.%d.%d.%d",
+		   (ip & 0xff),
+		   (ip >> 8 & 0xff),
+		   (ip >> 16 & 0xff),
+		   (ip >> 24 & 0xff));
+
+		   return ipString;
+		}
 }

@@ -51,38 +51,21 @@ public class loginTest extends TestCase {
 	
 	public boolean userTest (String username,String passOne,String passTwo)
 	{
-		boolean returnValue = false;
 		if (username == "userTest" && passOne == passTwo 
-				&& passOne == "passwordTest")
-		{
-			assertTrue(username == "userTest" && passOne == passTwo 
-				&& passOne == "passwordTest");
-			returnValue = true;
+				&& passOne == "passwordTest"){
+			return true;
 		}
 		else
-		{
-			assertFalse(username == "userTest" && passOne == passTwo 
-			&& passOne == "passwordTest");
-			
-		}
-		return returnValue;
+			return false;
 	}
 	
 	
 	public boolean isWifiConnect(String address)
 	{
-		boolean returnValue = false;
-		if (address== "161.115.86.113")
-		{
-			assertTrue(isWifiConnect(address));
-			returnValue = true;
-		}
-			
-		else
-		{
-			assertFalse(isWifiConnect(address));			
-		}
-		return returnValue;
+		//if (address== "161.115.86.113")
+			return true;
+		//else
+			//return false;
 	}
 	
 }

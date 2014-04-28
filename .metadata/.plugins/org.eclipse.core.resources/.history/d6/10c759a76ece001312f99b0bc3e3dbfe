@@ -51,6 +51,23 @@ public class Login extends Activity implements OnClickListener{
 			DialogDemo.builder(Login.this, "Wifi", "Please connect to wifi");
 		}
     }
+  /*
+   * all net checking (include wifi 3g etc..)  
+    private boolean isNetConnected(){
+    	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    	if (cm != null){
+    		NetworkInfo[] infos = cm.getAllNetworkInfo();
+    		if (infos !=null){
+    			for (NetworkInfo netInfo:infos){
+    				if (netInfo.isConnected()){
+    					return true;
+    				}
+    			}
+    		}
+    	}
+    	return false;
+    }
+    */
     
     /*
      * check wifi status

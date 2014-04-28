@@ -15,7 +15,7 @@ public class test extends TestCase {
 	}
 
 	private Context getApplicationContext() {
-		assertNull(getApplicationContext());
+		assertNotNull(getApplicationContext());
 		
 		return null;
 	}
