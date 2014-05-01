@@ -59,5 +59,10 @@ is woking on virtual(only false, beacuse virutal cant check it)
 April 15
 Pair-programming to write test and refactor code
 test pass
+April 20
+Writing test
 
+April 27
+Pair-programming, Writing test. add more things
+try to refactor
 
