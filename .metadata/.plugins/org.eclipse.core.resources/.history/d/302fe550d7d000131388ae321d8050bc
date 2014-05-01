@@ -71,6 +71,10 @@ public class SuccessLogin extends Activity implements OnClickListener{
 				*/
 				else if(id == R.id.scan)
 				 { 
+					 Intent intent = new Intent();
+					 intent.setClass(SuccessLogin.this, Login.class);
+					 startActivity(intent);
+					 
 					Toast.makeText(getApplicationContext(), "Start Scan.",
 						Toast.LENGTH_LONG).show();
 					wifi.startScan();

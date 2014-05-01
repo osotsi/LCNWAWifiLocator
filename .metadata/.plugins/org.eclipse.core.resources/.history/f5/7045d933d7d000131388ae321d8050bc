@@ -71,13 +71,21 @@ public class SuccessLogin extends Activity implements OnClickListener{
 				*/
 				else if(id == R.id.scan)
 				 { 
-					Toast.makeText(getApplicationContext(), "Start Scan.",
-						Toast.LENGTH_LONG).show();
-					wifi.startScan();
-					wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-					wifi.setWifiEnabled(true);
-					if (receiver == null) {
-						receiver = new WiFiScanReceiver();
+					 Intent intent = new Intent();
+					 intent.setClass(SuccessLogin.this, Login.class);
+					 startActivity(intent);
+					 
+
+						wifi.setWifiEnabled(true);
+						Toast.makeText(getApplicationContext(), "Start Scan.",
+							Toast.LENGTH_LONG).show();
+						Log.d("WifiInfo", "onClick() wifi.startScan()");
+						wifi.startScan();
+						wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+						wifi.setWifiEnabled(true);
+						if (receiver == null) {
+							receiver = new WiFiScanReceiver();
+
 						registerReceiver(receiver, new IntentFilter(
 								WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
 						Log.d("WifiInfo", "onCreate()");
