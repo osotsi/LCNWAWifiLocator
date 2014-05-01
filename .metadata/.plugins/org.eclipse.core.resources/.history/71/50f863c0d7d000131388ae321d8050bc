@@ -59,7 +59,8 @@ public class SuccessLogin extends Activity implements OnClickListener{
 			    /**
 				* click to exit(back to login page)
 				*/
-				if(id == R.id.exit){ 
+				if(id == R.id.exit)
+				 { 
 					 Intent intent = new Intent();
 					 intent.setClass(SuccessLogin.this, Login.class);
 					 startActivity(intent);
@@ -75,6 +76,7 @@ public class SuccessLogin extends Activity implements OnClickListener{
 						Toast.LENGTH_LONG).show();
 					wifi.startScan();
 					wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+					wifi.setWifiEnabled(true);
 					if (receiver == null) {
 						receiver = new WiFiScanReceiver();
 						registerReceiver(receiver, new IntentFilter(
