@@ -47,7 +47,6 @@ public class SuccessLogin extends Activity implements OnClickListener{
         	scan = (Button)findViewById(R.id.scan);
         	scan.setOnClickListener(this);
         	wifiStre = (TextView)findViewById(R.id.wifiStre);
-        	
 	}
 	
 

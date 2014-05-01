@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="android.net.wifi.WifiManager"/>
 <fullyQualifiedTypeName name="android.net.wifi.WifiInfo"/>
 <fullyQualifiedTypeName name="android.text.format.Formatter"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
 </qualifiedTypeNameHistroy>

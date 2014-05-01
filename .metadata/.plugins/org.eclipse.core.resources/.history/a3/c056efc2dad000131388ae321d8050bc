@@ -19,14 +19,14 @@
         android:id="@+id/wifiStre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.24"
-        android:text="wifi Stregth:" />
+        android:layout_weight="0.24" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="346dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.48" />
+        android:layout_weight="0.48"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/exit"
