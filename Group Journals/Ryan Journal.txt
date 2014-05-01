@@ -47,6 +47,9 @@ Next step: to create wifi and network state test in login page and return a resu
 April 1
 programming about android
 
+Apirl 7
+Team working about some new things
+
 April 8 
 Create JUnit test for application
 Something wrong about package 
@@ -66,15 +69,17 @@ use boolean to check and reutn true of false
 is woking on virtual(only false, beacuse virutal cant check it)
 
 April 15
-Pair-programming to write test and refactor code
+Pair-programming with Justin and Deron ,to write test and refactor code
 test pass
 
 April 20
 Writing test
+Pair-programming with Justin and Deron 
 
 April 27
-Pair-programming, Writing test. add more things
+Pair-programming with Justion and Deron, Writing test. add more things
 try to refactor
 
 April 30
 Work on scan button, but with some problems.
+Try to connect to server
