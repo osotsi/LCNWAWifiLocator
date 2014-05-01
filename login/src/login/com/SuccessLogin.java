@@ -94,14 +94,14 @@ public class SuccessLogin extends Activity implements OnClickListener{
 			}
 	
     private boolean isWifiConnected(){
-    //	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-    //	if (cm != null){
-    //		NetworkInfo wifiInfo = cm.getActiveNetworkInfo();
-    //			if (wifiInfo!=null && wifiInfo.getType() == ConnectivityManager.TYPE_WIFI ){
-    //
-    //					return true;
-    //			}
-    //	}
+    	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    	if (cm != null){
+    		NetworkInfo wifiInfo = cm.getActiveNetworkInfo();
+    			if (wifiInfo!=null && wifiInfo.getType() == ConnectivityManager.TYPE_WIFI ){
+    
+    					return true;
+    			}
+    	}
     	return false;
     }
     
