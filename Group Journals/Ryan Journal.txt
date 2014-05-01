@@ -65,4 +65,5 @@ Writing test
 April 27
 Pair-programming, Writing test. add more things
 try to refactor
-
+April 30
+Work on scan button, but with some problems.
