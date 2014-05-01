@@ -56,13 +56,7 @@ public class Login extends Activity implements OnClickListener{
      * check wifi status
      */
     private boolean isWifiConnected(){
-    	/*
-    	ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-    		NetworkInfo wifiInfo = cm.getActiveNetworkInfo();
-    		if (wifiInfo!=null && wifiInfo.getType() == ConnectivityManager.TYPE_WIFI ){
-    			return true;
-    		}
-    		else*/
+
     			return false;
     }
     
