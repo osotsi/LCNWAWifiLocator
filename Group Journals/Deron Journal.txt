@@ -1,7 +1,20 @@
 Date (mm/dd)    Entry
 ------------    ------
-(03/28)?        Justin and I started building the wiki page
-(03/30)?        I updated the wiki page with links and to be more appealing
-(03/30)?        Justin, Ryan and I started working more on the graphical user interface
-(04/15)		Darrius and I PPed the wiki page to update with screenshots
-(04/15)		Ryan, Darrius, Justin and I PPed Tests for the Wifi Login screen.
+Prior to (03/08)  Organized into teams, learned the basics of S.E. and came up with project ideas.
+
+(03/08)         Worked With Justin and Ryan researching how to start building an Android app
+(03/13)         Downloaded Managaed Wifi API and added it to our current project
+(03/15)         Worked with Ryan and Got a login page that includes a username & password textbox
+(03/19)         Looked over code from previous WifiLocator group with justin to determine possible options
+(03/20)         Spring Break
+(03/26)         Justin and I started building the wiki page
+(03/30)         Justin and I updated the wiki page with links to be more appealing
+(03/30)         Justin, Ryan and I started working more on the graphical user interface
+
+(04/05)         Rob, Ryan and I started downloading Android SDK and to get it to work properly
+(04/07)         Rob, Ryan and I downloaded JUnit and got it implemented into Android SDK to make tests
+(04/15)		      Darrius and I PPed the wiki page to update with screenshots
+(04/15)	      	Ryan, Darrius, Justin and I PPed Tests for the Wifi Login screen.
+(04/20)         Ryan, Justin and I wrote tests to our existing user interface code.
+(04/27)         Justin, Ryan and I wrote tests to test the logging in and our of our interface.
+(04/30)         Wrote tests to check if wifi is connected, WiFi connect test would not pass because it would not connect to wifi
