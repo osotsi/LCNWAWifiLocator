@@ -30,14 +30,21 @@ earlier in the year of 2014 - 3/1:
 
 3/30 - 4/6:
 9. Researched how to find the a user's mac address
+10. PPed with Ryan and Deron writing tests for Android app
 
 4/7 - 13:
-10. attempted to write tests in JUnit
--very unsucessful, JUnit did not recognize code
+11. Researched connecting  SQL database with android app 
 
 4/14 - 4/20
-11. researched how to find/utilize IP address in c#
+12. researched how to find/utilize IP address in c#
 	-http://msdn.microsoft.com/en-us/library/4xzx2d41%28v=vs.110%29.aspx
-12. unsuccessful with C#, researched adroid app IP adress
+13. unsuccessful with C#, researched adroid app IP adress
 	-https://play.google.com/store/apps/details?id=jp.ne.neko.freewing.DispWiFiIP
- 
+14. PPed with darius writing server test 
+	
+
+4/21 - 4/27
+Present while login tests were being implemented
+
+4/28 - 4/4
+last minute PPed with deron and Ryan writing more connection testing
