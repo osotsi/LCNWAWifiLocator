@@ -1,26 +1,20 @@
-
 03/04/2014
-
 Researched what databases to use (settled on mysql).
 
 03/06/2014
-
 Created the first basic version of the Wifi Server Connect program with Darrius
 
 03/09/2014-03/16/2014 - Spring break
 
 
 Week of 3/17/2014 to 3/20/2014
-
 Finished the Wifi App with Darrius and Justin after discussions, presented it.
 
 Week of 3/23/2014 to 3/29:
 
 04/16/2014
-
 Updated the server program with darrius to put labels outside of the text boxes.
 
 04/17/2014
-
 Got port 5001 from Mr. Granger.
 
