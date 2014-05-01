@@ -93,7 +93,7 @@ public class SuccessLogin extends Activity implements OnClickListener{
 	   
 	/*
 	 * Show the all wifi information that phone get
-	 * 
+	 * */
 	class WiFiScanReceiver extends BroadcastReceiver {
 
 		@Override
@@ -107,7 +107,7 @@ public class SuccessLogin extends Activity implements OnClickListener{
 			wifiStre.setText(status);
 		}
 
-	}*/
+	}
     
 }
     

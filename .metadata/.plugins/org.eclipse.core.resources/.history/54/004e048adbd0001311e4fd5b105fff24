@@ -70,30 +70,22 @@ public class SuccessLogin extends Activity implements OnClickListener{
 				*/
 				else if(id == R.id.scan)
 				 { 
-					status = new StringBuilder();
-					final List<ScanResult> results = wifi.getScanResults();
-					for (int i = 0; i < results.size(); i++) {
-						status.append(results.get(i).toString());
-						status.append("\n");
+					Toast.makeText(getApplicationContext(), "Start Scan.",
+						Toast.LENGTH_LONG).show();
+					wifi.startScan();
+					wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+					if (receiver == null) {
+						receiver = new WiFiScanReceiver();
+						registerReceiver(receiver, new IntentFilter(
+								WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
+						Log.d("WifiInfo", "onCreate()");
 					}
-					wifiStre.setText(status);
-				/*
-				Toast.makeText(getApplicationContext(), "Start Scan.",
-					Toast.LENGTH_LONG).show();
-				wifi.startScan();
-				wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-				if (receiver == null) {
-					receiver = new WiFiScanReceiver();
-					registerReceiver(receiver, new IntentFilter(
-							WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
-					Log.d("WifiInfo", "onCreate()");	
-				}*/
 			 	}
 			}
 	   
 	/*
 	 * Show the all wifi information that phone get
-	 * 
+	 * */
 	class WiFiScanReceiver extends BroadcastReceiver {
 
 		@Override
@@ -107,7 +99,7 @@ public class SuccessLogin extends Activity implements OnClickListener{
 			wifiStre.setText(status);
 		}
 
-	}*/
+	}
     
 }
     
